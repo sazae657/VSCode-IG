@@ -1,0 +1,39 @@
+{
+  "name": "ig",
+  "displayName": "ig",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "sazae657",
+  "engines": {
+    "vscode": "^1.14.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.IncludeGuard"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.IncludeGuard",
+        "title": "IncludeGuard"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.40",
+    "mocha": "^2.3.3",
+    "path": "^0.12.7",
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0"
+  }
+}
