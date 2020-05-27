@@ -1,8 +1,8 @@
 {
   "name": "ig",
-  "displayName": "ig",
-  "description": "",
-  "version": "0.0.2",
+  "displayName": "Ig",
+  "description": "昔ながらのｲﾝｸﾙーﾄﾞｶﾞーﾄﾞを挿入する",
+  "version": "0.0.1",
   "publisher": "sazae657",
   "engines": {
     "vscode": "^1.30.0"
@@ -10,6 +10,11 @@
   "categories": [
     "Other"
   ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Narazaka/vscode-kawari.git"
+  },
   "activationEvents": [
     "onCommand:extension.IncludeGuard"
   ],
@@ -24,8 +29,7 @@
   },
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -watch -p ./",
-    "test": "node ./node_modules/vscode/bin/test"
+    "compile": "tsc -watch -p ./"
   },
   "devDependencies": {
     "@types/mocha": "^7.0.2",
